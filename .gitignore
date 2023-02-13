@@ -105,3 +105,4 @@ dist
 
 # .env // ! .env ignored
 .env
+env.js
