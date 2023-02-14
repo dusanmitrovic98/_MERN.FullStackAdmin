@@ -1,21 +1,21 @@
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
-import { useMemo } from "react";
-import { useSelector } from "react-redux";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import { themeSettings } from "theme";
-import Layout from "scenes/layout";
-import Dashboard from "scenes/dashboard";
-import Products from "scenes/products";
-import Customers from "scenes/customers";
 import Transactions from "scenes/transactions";
-import Geography from "scenes/geography";
-import Overview from "scenes/overview";
-import Daily from "scenes/daily";
-import Monthly from "scenes/monthly";
-import Breakdown from "scenes/breakdown";
-import Admin from "scenes/admin";
 import Performance from "scenes/performance";
+import { useSelector } from "react-redux";
+import Geography from "scenes/geography";
+import Customers from "scenes/customers";
+import Breakdown from "scenes/breakdown";
+import Dashboard from "scenes/dashboard";
+import Overview from "scenes/overview";
+import Products from "scenes/products";
+import { themeSettings } from "theme";
+import Monthly from "scenes/monthly";
+import Layout from "scenes/layout";
+import Admin from "scenes/admin";
+import { useMemo } from "react";
+import Daily from "scenes/daily";
 
 function App() {
   const mode = useSelector((state) => state.global.mode);

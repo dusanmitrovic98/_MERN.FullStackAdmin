@@ -1,3 +1,4 @@
+import { useGetProductsQuery } from "state/api";
 import React, { useState } from "react";
 import {
   Box,
@@ -12,7 +13,6 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import Header from "components/Header";
-import { useGetProductsQuery } from "state/api";
 
 const Product = ({
   _id,

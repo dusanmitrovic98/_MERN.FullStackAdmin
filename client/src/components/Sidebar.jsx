@@ -1,3 +1,7 @@
+import { useLocation, useNavigate } from "react-router-dom";
+import profileImage from "assets/profile.jpeg";
+import { useEffect, useState } from "react";
+import FlexBetween from "./FlexBetween";
 import React from "react";
 import {
   Box,
@@ -28,10 +32,6 @@ import {
   TrendingUpOutlined,
   PieChartOutlined,
 } from "@mui/icons-material";
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import FlexBetween from "./FlexBetween";
-import profileImage from "assets/profile.jpeg";
 
 const navItems = [
   {

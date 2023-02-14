@@ -1,6 +1,11 @@
-import React from "react";
+import BreakdownChart from "components/BreakdownChart";
+import OverviewChart from "components/OverviewChart";
 import FlexBetween from "components/FlexBetween";
+import { useGetDashboardQuery } from "state/api";
+import { DataGrid } from "@mui/x-data-grid";
+import StatBox from "components/StatBox";
 import Header from "components/Header";
+import React from "react";
 import {
   DownloadOutlined,
   Email,
@@ -15,11 +20,6 @@ import {
   useTheme,
   useMediaQuery,
 } from "@mui/material";
-import { DataGrid } from "@mui/x-data-grid";
-import BreakdownChart from "components/BreakdownChart";
-import OverviewChart from "components/OverviewChart";
-import { useGetDashboardQuery } from "state/api";
-import StatBox from "components/StatBox";
 
 const Dashboard = () => {
   const theme = useTheme();

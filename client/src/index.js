@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import { configureStore } from "@reduxjs/toolkit";
-import globalReducer from "state";
-import { Provider } from "react-redux";
 import { setupListeners } from "@reduxjs/toolkit/query";
+import { configureStore } from "@reduxjs/toolkit";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import globalReducer from "state";
 import { api } from "state/api";
+import React from "react";
+import App from "./App";
+import "./index.css";
 
 const store = configureStore({
   reducer: {

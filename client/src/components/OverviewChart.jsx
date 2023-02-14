@@ -1,7 +1,7 @@
-import React, { useMemo } from "react";
-import { ResponsiveLine } from "@nivo/line";
-import { useTheme } from "@mui/material";
 import { useGetSalesQuery } from "state/api";
+import { ResponsiveLine } from "@nivo/line";
+import React, { useMemo } from "react";
+import { useTheme } from "@mui/material";
 
 const OverviewChart = ({ isDashboard = false, view }) => {
   const theme = useTheme();
@@ -42,7 +42,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
     );
 
     return [[totalSalesLine], [totalUnitsLine]];
-  }, [data]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [data]);
 
   if (!data || isLoading) return "Loading...";
 
