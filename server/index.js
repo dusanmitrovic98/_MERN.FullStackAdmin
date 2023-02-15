@@ -52,9 +52,10 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
+    console.log(mongoDbUrl);
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
-    /* ADD ONE BY ONE!!!!! */
+    /* ADD ONE BY ONE!!!!!E */
     // AffiliateStat.insertMany(dataAffiliateStat);
     // OverallStat.insertMany(dataOverallStat);
     // Product.insertMany(dataProduct);
